@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAY Gift shop</title>
+    <link rel="icon" type="image/jpg" href="LAYlogo.jpg">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="LAYlogo2.jpg">
+        <br>
+        <h1>LAY Gift shop</h1>
+        
+    </header>
+    <main>
+        <div class="home">
+            <h2>Welcome to LAY Gift shop</h2>
+            <p>We offer a variety of products and services to meet your needs. Browse our online platforms to learn more.</p>
+        </div>
+        <div class="about">
+            <h2>About Us</h2>
+            <p>We are a small business dedicated to providing high-quality products and services to our customers.</p>
+        </div>
+        <div class="services">
+            <h2>Our Pages</h2>
+            <div class="social-media">
+              <a href="https://instagram.com/lay__gift?igshid=YmMyMTA2M2Y="target="_blank"  >
+                <p>Instagram</p>
+                  <img  src="instagram.png.png" alt="Instagram" >
+                </a>
+                <a href="https://www.tiktok.com/@lay__gift?_t=8ZzPZNkzRPm&_r=1"target="_blank" >
+                    <p>TikTok</p>
+                    <img  src="tiktok.png.png" alt="TikTok" />
+                    </a>
+              </div>
+        </divs>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+				<br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+				<br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea>
+                <br><br>
+                <button type="submit">Send</button>
+            </form>
+            <p>Alternatively, you can reach us via WhatsApp</p>
+            <div class="social-media">
+                
+                <a aria-label="WhatsApp Chat  " href="https://wa.me/+96181099254"target="_blank" >
+                   
+                    <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png.png">
+                </a>
+            </div>
+            <p>You can Call us on +96181099254 </p>
+            <div class="social-media">
+               
+                <a aria-label="Call us  " href="tel:+96181099254_blank" >
+                    <img alt="Call us" src="callme.png">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer style="text-align: center;">
+        <h1 style="font-style: Ametrine Italic;">Your loved ones deserve the best</h1>
+         <h2>LAY Gift shop</h2>
+         <p>Copyright &copy; 2023 </p>
+       
+    </footer>
+    <script>
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+            window.location.href = `mailto:layla.keserwene@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+</html>
